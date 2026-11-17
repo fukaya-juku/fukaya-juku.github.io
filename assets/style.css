@@ -510,3 +510,8 @@ p,li,.acc-body,.f-art p,.m-txt p,.w-item p,.card p{font-weight:400}
   .h-main{font-size:33px}
 }
 @media (max-width:370px){.hg-t{font-size:22px}.h-main{font-size:28px}}
+
+/* 2026-11 トップの文言を元に戻す */
+.h-pen{display:inline-block !important;color:#fff;font-size:26px;font-weight:900;border-bottom:3px solid #fff;padding-bottom:2px;margin-top:20px}
+@media (max-width:840px){.h-pen{font-size:21px}.h-main{font-size:35px}}
+@media (max-width:370px){.h-pen{font-size:18px}.h-main{font-size:30px}}
