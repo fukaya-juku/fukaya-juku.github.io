@@ -13,4 +13,7 @@ main に push すると数分で公開サイトに反映される。
 - 修正はHTMLを直接編集する。ヘッダー・フッター・連絡先（LINE、電話 048-571-5050、住所）は全ページに同じものが入っているので、変えるときは9ページすべてをそろえる。
 - 画像は Studio（storage.googleapis.com/studio-design-asset-files/...）から読み込んでいる。URLは変えない。
 - 依頼者はスマホで閲覧・依頼する。本文は16px以上、ボタンは押しやすい大きさを保つ。
+- コミットの作者は必ずリポジトリの持ち主にする（Netlifyの無料プランは持ち主以外のコミットを公開しないため）:
+  `git -c user.name="gkfukayakamishiba-wq" -c user.email="357681865+gkfukayakamishiba-wq@users.noreply.github.com" commit ...`
+  push 後、Netlify の公開が「Failed（Unrecognized Git contributor）」になっていないか確認する。
 - 修正したら main に直接 push してよい（依頼者が承認済みの運用）。push 後、どのページの何を変えたかを短く報告する。
