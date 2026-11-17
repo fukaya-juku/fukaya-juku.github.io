@@ -1,7 +1,7 @@
 # 学習空間 深谷上柴教室 ホームページ
 
 GitHub Pages がこのリポジトリの main ブランチを自動で公開する静的サイト（ビルドなし）。
-公開URL: https://gkfukayakamishiba-wq.github.io/blue0728/（リポジトリ名 blue0728）
+公開URL: https://fukaya-juku.github.io/（GitHub組織 fukaya-juku のリポジトリ fukaya-juku.github.io）
 main に push すると1〜2分で公開サイトに反映される。リンクとファイルの参照は必ず相対パスで書く（/ から始めない）。
 旧URLの blue0728.netlify.app は Netlify の無料枠（公開は月20回まで）で止まることがあるため、公開先としては使わない。
 
