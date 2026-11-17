@@ -451,3 +451,62 @@ h1,h2,h3,p{margin:0}
   .cc-days span{font-size:15px !important}
 }
 @media (max-width:370px){.school{display:none}}
+
+/* ===== 2026-11 レイアウト調整 ===== */
+/* 日本語の改行を文節で（単語の途中で折り返さない） */
+h1,h2,h3,.sec-title,.sec-sub,.cc-catch,.cc-title,.cc-grade,.cc-big,.cc-note,.cc-foot,.cta-bar p,.acc>summary .t,.g-label,.grade-band h3,.cs-lead{word-break:auto-phrase;text-wrap:balance}
+
+/* トップの見出し */
+.hero-band{background:linear-gradient(160deg,#0A8FE0 0%,#1E5BE6 55%,#3B2FC9 100%);padding:44px 20px 40px;text-align:center}
+.hero-band h1{display:flex;flex-direction:column;align-items:center;gap:14px;color:#fff}
+.hero-band .l0{display:block;font-size:24px;font-weight:700;letter-spacing:.06em;line-height:1.5;opacity:.95}
+.hero-band .l1{display:block;font-size:50px;font-weight:900;line-height:1.35;letter-spacing:.03em;color:#fff;text-shadow:0 3px 0 rgba(3,18,91,.35)}
+.hero-band .l1 em{font-style:normal;background:linear-gradient(transparent 62%,#FF8924 62%,#FF8924 92%,transparent 92%);padding:0 .08em}
+.hero-band .l2{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:4px}
+.hero-band .l2>span{background:#fff;color:var(--indigo-dk);font-size:20px;font-weight:900;line-height:1.3;border-radius:64px;padding:8px 20px;box-shadow:0 3px 0 rgba(3,18,91,.25)}
+.hero-band .l3{display:inline-block;color:#fff;font-size:26px;font-weight:900;letter-spacing:.06em;text-decoration:none;border-bottom:4px solid #FFD54F;padding-bottom:4px;margin-top:6px}
+.hero-band br.sp{display:none}
+@media (max-width:840px){
+  .hero-band{padding:30px 16px 30px}
+  .hero-band h1{gap:12px}
+  .hero-band .l0{font-size:17px}
+  .hero-band .l1{font-size:31px;line-height:1.4}
+  .hero-band br.sp{display:inline}
+  .hero-band .l2{gap:8px}
+  .hero-band .l2>span{font-size:16px;padding:7px 14px}
+  .hero-band .l3{font-size:20px}
+}
+@media (max-width:370px){.hero-band .l1{font-size:27px}.hero-band .l2>span{font-size:15px;padding:6px 11px}}
+
+/* 冬期講習の日程 */
+.win-sched{background:#fff;border-radius:10px;padding:18px 16px 20px;margin:14px 0 16px;text-align:left;box-shadow:0 2px 0 #C9DCF5}
+.ws-h{font-size:18px;font-weight:900;color:var(--indigo-dk);text-align:center;margin:0 0 12px;line-height:1.5}
+.ws-h+.ws-flow{margin-top:0}
+.wc{display:grid;gap:12px}
+.wc-month{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:10px}
+.wc-m{background:var(--cta);color:#fff;font-weight:900;font-size:17px;text-align:center;border-radius:8px;padding:10px 0;line-height:1.2}
+.wc-days{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.wc-days li{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--sky50);border:2px solid var(--sky200);border-radius:8px;padding:6px 0 5px;line-height:1.15}
+.wc-days b{font-family:Lato,"Noto Sans JP",sans-serif;font-size:24px;font-weight:900;color:var(--navy)}
+.wc-days span{font-size:13px;font-weight:700;color:var(--ink)}
+.ws-time{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin:14px 0 20px;font-size:16px;font-weight:700;color:var(--ink2);text-align:center}
+.ws-time span{background:var(--orange);color:#fff;font-size:14px;font-weight:900;border-radius:64px;padding:3px 12px}
+.ws-flow{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:wf}
+.ws-flow li{display:grid;grid-template-columns:120px 1fr;align-items:center;gap:10px;background:var(--sky50);border-radius:8px;padding:10px 12px;position:relative}
+.ws-flow li+li::before{content:"";position:absolute;left:68px;top:-10px;border:6px solid transparent;border-top:7px solid var(--sky200);transform:translateY(-2px)}
+.wf-date{background:#fff;border:2px solid var(--cta);color:var(--cta);font-weight:900;font-size:15px;text-align:center;border-radius:6px;padding:4px 2px;line-height:1.3}
+.wf-t{font-size:16px;font-weight:700;color:var(--ink2);line-height:1.5}
+.ws-flow li:last-child{background:#FFF3E6}
+.ws-flow li:last-child .wf-date{border-color:var(--orange);color:#D65F00}
+@media (max-width:370px){.wc-days{gap:4px}.wc-days b{font-size:20px}.ws-flow li{grid-template-columns:104px 1fr}.wf-date{font-size:14px}}
+
+/* キャンペーンカードの余白と読みやすさ */
+.card-campaign{border-radius:12px}
+.cc-grade{margin:10px 0 14px}
+.cc-big{margin:12px 0 4px}
+.cc-grade{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px;background:none;padding:0;border-radius:0}
+.cc-grade span{background:#fff;border-radius:64px;padding:3px 12px;font-size:15px;font-weight:700;line-height:1.5}
+.cc-grade .cg-l{background:var(--indigo-dk);color:#fff}
+.ws-flow li{grid-template-columns:112px 1fr}
+.ws-flow li+li::before{left:60px}
+.wf-t,.ws-time,.cc-grade span{word-break:auto-phrase}
