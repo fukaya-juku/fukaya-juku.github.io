@@ -37,6 +37,19 @@
     if (prev) prev.addEventListener('click', function () { stop(); step(track, -1); });
     if (next) next.addEventListener('click', function () { stop(); step(track, 1); });
     if (playBtn) playBtn.addEventListener('click', function () { timer ? stop() : play(); });
+    // 何枚目かを表示（例：3 / 10）
+    var n = track.children.length;
+    if (root.classList.contains('slider') && n > 1 && prev) {
+      var count = document.createElement('span');
+      count.className = 'sl-count';
+      prev.after(count);
+      var upd = function () {
+        var s = track.children[0], w = s.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0);
+        var i = Math.min(n, Math.round(track.scrollLeft / w) + 1);
+        count.textContent = i + ' / ' + n;
+      };
+      track.addEventListener('scroll', upd, { passive: true }); upd();
+    }
     if (auto) {
       play();
       root.addEventListener('mouseenter', stop);

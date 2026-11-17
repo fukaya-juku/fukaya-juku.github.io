@@ -9,6 +9,13 @@ main に push すると数分で公開サイトに反映される。
 - assets/style.css … 全ページ共通のデザイン（スマホ用は @media (max-width:840px) のブロック）
 - assets/site.js … メニュー、スライダー、画像のタップ拡大、トップへ戻る
 
+## デザイン（「ノートと赤ペン」）
+- 背景は方眼ノート、文字と枠は濃紺（--ink）、見出しは黄色の蛍光ペン（`<span class="mk">`）、先生の書き込みは赤ペン（--red、書体 Klee One）と花丸（--hana）。
+- 書体は Zen Maru Gothic（本文500・見出し900）と Klee One（赤ペンの手書き）。色・角丸・影は assets/style.css 冒頭の変数を使う。新しい色や影を足さない。
+- カードは「白地＋濃紺の2px枠＋角丸14px」。ボタンは「2px枠＋下に濃紺の影」。
+- 見出し（sec-title、g-title、title-band の h1 など）の文字は `<span class="mk">` で囲んで蛍光ペンを引く。
+- 事例などの画像スライドは1枚ずつ大きく表示する（.slider）。画像は `<a class="zoom" data-zoom>` で囲み、タップで拡大できるようにする。
+
 ## 修正のルール
 - 修正はHTMLを直接編集する。ヘッダー・フッター・連絡先（LINE、電話 048-571-5050、住所）は全ページに同じものが入っているので、変えるときは9ページすべてをそろえる。
 - 画像は Studio（storage.googleapis.com/studio-design-asset-files/...）から読み込んでいる。URLは変えない。
