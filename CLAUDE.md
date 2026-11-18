@@ -23,3 +23,7 @@ main に push すると1〜2分で公開サイトに反映される。リンク�
 - 画像は Studio（storage.googleapis.com/studio-design-asset-files/...）から読み込んでいる。URLは変えない。
 - 依頼者はスマホで閲覧・依頼する。本文は16px以上、ボタンは押しやすい大きさを保つ。
 - 修正したら main に直接 push してよい（依頼者が承認済みの運用）。push 後、公開URLで反映を確認し、どのページの何を変えたかを短く報告する。
+
+## 検索（Google Search Console）
+- ルートの google2ad16733a49f0260.html は Search Console の所有権確認ファイル。消さない・変えない。
+- sitemap.xml（ホームページ9ページ）と robots.txt はルートに置く。ページを増やしたら sitemap.xml にも足す。入試ナビの地図は nyushi/sitemap.xml（fukaya-juku/nyushi リポジトリ側で自動作成）。
