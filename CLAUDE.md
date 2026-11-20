@@ -4,6 +4,7 @@ GitHub Pages がこのリポジトリの main ブランチを自動で公開す�
 公開URL: https://fukaya-juku.github.io/（GitHub組織 fukaya-juku のリポジトリ fukaya-juku.github.io）
 main に push すると1〜2分で公開サイトに反映される。リンクとファイルの参照は必ず相対パスで書く（/ から始めない）。
 旧URLの blue0728.netlify.app は Netlify の無料枠（公開は月20回まで）で止まることがあるため、公開先としては使わない。
+ルートの `_redirects` は Netlify（旧URL blue0728.netlify.app）用で、旧URLへのアクセスをすべて新URLへ転送する（GitHub Pages では使われない）。消さない。
 
 ## 構成
 - index.html（トップ）, tsuyomi.html（強み）, koushu.html（講習）, shogaku.html（小学生）,
